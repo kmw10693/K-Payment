@@ -1,4 +1,6 @@
 package backend.kpayment.refundment.event;
 
-public class RefundCompletedEvent {
+import java.io.Serializable;
+
+public record RefundCompletedEvent(String orderId, String idempotencyKey) implements Serializable {
 }
